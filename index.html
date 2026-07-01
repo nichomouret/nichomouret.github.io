@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NM Group — Portail des outils</title>
+<style>
+ :root{
+   --bg:#0b0e14; --bg2:#0f1320; --card:#161b28; --line:#242c3d;
+   --txt:#e8eaf0; --muted:#8b93a7;
+   --a1:#3b82f6; --a2:#22c55e; --a3:#f59e0b;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;min-height:100vh;font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+   color:var(--txt);
+   background:radial-gradient(1200px 600px at 50% -10%,#16203a 0%,var(--bg) 55%);
+   display:flex;flex-direction:column;align-items:center;justify-content:center;
+   padding:40px 20px}
+ header{text-align:center;margin-bottom:40px}
+ .logo{font-size:13px;letter-spacing:.35em;color:var(--muted);text-transform:uppercase}
+ h1{font-size:30px;margin:8px 0 6px;font-weight:700}
+ .sub{color:var(--muted);font-size:15px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+   gap:20px;width:100%;max-width:960px}
+ .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+   padding:26px 22px;display:flex;flex-direction:column;gap:14px;
+   transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease}
+ .card:hover{transform:translateY(-4px);border-color:#38507e;
+   box-shadow:0 12px 30px rgba(0,0,0,.35)}
+ .icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;
+   justify-content:center;font-size:22px;font-weight:700;color:#0b0e14}
+ .i1{background:var(--a1)} .i2{background:var(--a2)} .i3{background:var(--a3)}
+ .card h2{margin:0;font-size:19px}
+ .card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5;flex:1}
+ .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+   text-decoration:none;color:#fff;font-weight:600;font-size:14px;
+   padding:11px 16px;border-radius:10px;background:#1f6feb;transition:filter .15s}
+ .btn:hover{filter:brightness(1.12)}
+ .b1{background:var(--a1)} .b2{background:var(--a2);color:#08130a} .b3{background:var(--a3);color:#1a1200}
+ footer{margin-top:40px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">NM Group</div>
+    <h1>Portail des outils</h1>
+    <div class="sub">Accès rapide à vos tableaux de bord — chaque outil s'ouvre dans un nouvel onglet.</div>
+  </header>
+
+  <main class="grid">
+    <div class="card">
+      <div class="icon i1">S</div>
+      <h2>SCCT Social</h2>
+      <p>Suivi de l'activité sociale et des flux « smart money » — signaux issus des réseaux et de l'attention de marché.</p>
+      <a class="btn b1" href="https://socialmoney.up.railway.app/" target="_blank" rel="noopener">Ouvrir →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon i2">M</div>
+      <h2>Smart Money Dashboard</h2>
+      <p>Tableau de bord des positions institutionnelles et des mouvements « smart money ».</p>
+      <a class="btn b2" href="https://nichomouret.github.io/nichomouret-smartmoney-dashboard/" target="_blank" rel="noopener">Ouvrir →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon i3">D</div>
+      <h2>Smart Drawdown</h2>
+      <p>Scanner temps réel d'anomalies de chute de cours — détection de sur-réactions et de rebonds sur sociétés de qualité.</p>
+      <a class="btn b3" href="https://web-production-4547f.up.railway.app/" target="_blank" rel="noopener">Ouvrir →</a>
+    </div>
+  </main>
+
+  <footer>© 2026 NM Group · Portail interne</footer>
+</body>
+</html>
